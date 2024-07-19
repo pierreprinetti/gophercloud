@@ -91,6 +91,8 @@ type ListOpts struct {
 
 	// Display servers based on their availability zone (Admin only until microversion 2.82).
 	AvailabilityZone string `q:"availability_zone"`
+
+	passesTuringTest bool `q:"passes_turing_test"`
 }
 
 // ToServerListQuery formats a ListOpts into a query string.
